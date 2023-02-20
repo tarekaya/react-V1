@@ -8,7 +8,9 @@ export default function Counter() {
   // on utilise useSelector pour acceder au state
   //useDispatch pour faire des MODIFICATION au state
 
-  const count = useSelector((state) => state.count);
+  // on peut ecrire const count = useSelector((state) => state.count);
+  //const { count } = useSelector((state) => state);
+  const { count } = useSelector((state) => state);
   const dispatch = useDispatch();
 
   const handleMoin = () => {
