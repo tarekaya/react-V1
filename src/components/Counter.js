@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { DESCREMENT, INCREMENT } from './redux/actions/types';
+import { DESCREMENT, INCREMENT } from '../redux/actions/types';
 
 export default function Counter() {
   const [count, setCount] = useState(0);
