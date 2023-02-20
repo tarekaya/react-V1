@@ -3,9 +3,10 @@ import { INCREMENT, DECREMENT } from '../actios/types';
 const counterReducer = (state = { count: 0 }, action) => {
   switch (action.type) {
     case INCREMENT:
-      return state.count + 1;
+      // ...state pour importer tout le state
+      return { ...state, count: count + 1 };
     case DECREMENT:
-      return state.count - 1;
+      return { ...state, count: count - 1 };
     default:
       return state;
   }
