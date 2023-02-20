@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import {useSelector} from 'react-redux';
 
 export default function Counter() {
   const [count, setCount] = useState(0);
+  // AVEC REDUX
+  const countRedux = useSelector
   const handleMois = () => {
     setCount(count - 1);
   };
