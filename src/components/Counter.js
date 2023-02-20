@@ -9,7 +9,7 @@ export default function Counter() {
   //useDispatch pour faire des MODIFICATION au state
 
   // on peut ecrire const count = useSelector((state) => state.count);
-  //const { count } = useSelector((state) => state);
+  //par distruction const { count } = useSelector((state) => state);
   const { count } = useSelector((state) => state);
   const dispatch = useDispatch();
 
