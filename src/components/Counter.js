@@ -7,7 +7,8 @@ export default function Counter() {
   //using redux
   // on utilise useSelector pour acceder au state
   //useDispatch pour faire des MODIFICATION au state
-  const countRedux = useSelector((state) => state.count);
+
+  const count = useSelector((state) => state.count);
   const dispatch = useDispatch();
 
   const handleMoin = () => {
@@ -27,7 +28,7 @@ export default function Counter() {
   return (
     <div>
       <button onClick={handleMoin}>dec</button>
-      {countRedux}
+      {count}
       <button onClick={handlePlus}>inc</button>
     </div>
   );
