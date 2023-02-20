@@ -4,7 +4,10 @@ import { useSelector } from 'react-redux';
 export default function Counter() {
   const [count, setCount] = useState(0);
   //using redux
+  // on utilise useSelector pour acceder au state
+  //useDispatch pour faire des MODIFICATION au state
   const countRedux = useSelector((state) => state.count);
+  const dispatch = useDispatch();
   const handleMoin = () => {
     setCount(count - 1);
   };
