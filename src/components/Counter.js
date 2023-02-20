@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useSelector , useDispatch } from 'react-redux';
-import{DESCREMENT , INCREMENT} from ''
+import { useSelector, useDispatch } from 'react-redux';
+import { DESCREMENT, INCREMENT } from './redux/actions/types';
 
 export default function Counter() {
   const [count, setCount] = useState(0);
@@ -9,7 +9,7 @@ export default function Counter() {
   //useDispatch pour faire des MODIFICATION au state
   const countRedux = useSelector((state) => state.count);
   const dispatch = useDispatch();
-  
+
   const handleMoin = () => {
     //sans redux on utilise le hook useState()
     // setCount(count - 1);
